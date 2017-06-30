@@ -55,7 +55,8 @@ void evaluateCommonFriends (void *args)
 	}
 	p->res=count;
 
-	fprintf(stderr, "\n%u Gates have been used by party %d.\n",yaoGateCount(), p->id);	  
+	if(p->id == 1)
+		fprintf(stderr, "\n%u Gates have been used.\n",yaoGateCount());	  
 }
 
 
