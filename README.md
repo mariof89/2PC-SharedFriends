@@ -13,4 +13,4 @@
 Remember that the two parties need to be set with IDs equal to 1 and equal to 2 respectively
 
 ## Example
-$ cycle './a.out  1 alice bob carl john david jack | ./a.out 2 bob david alex luke '
+        $ cycle './a.out  1 alice bob carl john david jack | ./a.out 2 bob david alex luke '
