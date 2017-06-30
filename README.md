@@ -31,13 +31,13 @@ Moreover, strings are case sensitive and hence 'alice' is different from 'Alice'
     # 2 - david
     
 ### Explanation
-The number of gates used by the protocol
+The number of gates used by the protocol:
 
-    # 11323 Gates have been used by party 2.
-    # 11323 Gates have been used by party 1.
+    # 11323 Gates have been used.
 
 
-Results of party 1's computation
+
+Results of party 1's computation:
 
     # Time Spent by party 1: 0.049797 s
     
@@ -46,7 +46,7 @@ Results of party 1's computation
     # 2 - david
     
     
-Results of party 2's computation
+Results of party 2's computation:
 
     # Time Spent by party 2: 0.170891 s
 
