@@ -20,9 +20,12 @@ Moreover, strings are case sensitive and hence 'alice' is different from 'Alice'
 
     # 11323 Gates have been used by party 1.
 
+    # Time Spent by party 1: 0.049797 s
     
-
-
+    # Number common Friends evaluated by Party 1: 2
+    # 1 - bob
+    # 2 - david
+    
     # Time Spent by party 2: 0.170891 s
 
     # Number common Friends evaluated by Party 2: 2
@@ -30,9 +33,11 @@ Moreover, strings are case sensitive and hence 'alice' is different from 'Alice'
     # 2 - david
     
 ### Explanation
+1. The number of gates used by the protocol is equal to 11323
+#####
     # 11323 Gates have been used by party 2.
     # 11323 Gates have been used by party 1.
-1. The number of gates used by the protocol is equal to 11323
+
 2. Results of party 1's computation
 # 
     # Time Spent by party 1: 0.049797 s
