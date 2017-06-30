@@ -32,6 +32,7 @@ Moreover, strings are case sensitive and hence 'alice' is different from 'Alice'
     
 ### Explanation
 Instantiation of two parties with their own list of friends:
+
     $ cycle './a.out  1 alice bob carl john david jack | ./a.out 2 bob david alex luke ' 
 
 
@@ -59,5 +60,5 @@ Computation Results of Party 2:
     # 2 - david
     
     
-The two parties have been computed ther common friends using 11323 gates.
+The two parties have been computed their common friends using 11323 gates.
 
