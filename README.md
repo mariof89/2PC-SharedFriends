@@ -37,7 +37,7 @@ The number of gates used by the protocol:
 
 
 
-Results of party 1's computation:
+Computation Results of Party 1:
 
     # Time Spent by party 1: 0.049797 s
     
@@ -46,7 +46,7 @@ Results of party 1's computation:
     # 2 - david
     
     
-Results of party 2's computation:
+Computation Results of Party 2:
 
     # Time Spent by party 2: 0.170891 s
 
@@ -55,5 +55,5 @@ Results of party 2's computation:
     # 2 - david
     
     
-The two parties have been computed the shared friends with the counterpart using 11323 gates.
+The two parties have been computed ther common friends using 11323 gates.
 
