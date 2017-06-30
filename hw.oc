@@ -1,0 +1,61 @@
+#include <stdio.h>
+#include <obliv.oh>
+#include <string.h>
+#include "hw.h"
+
+void evaluateCommonFriends (void *args)
+{
+	Party *p = (Party *)args;
+
+
+	obliv int numFriendsParty1,numFriendsParty2;
+
+	numFriendsParty1= feedOblivInt(p->numFriends,1);
+	numFriendsParty2 = feedOblivInt(p->numFriends,2);
+
+
+	int size1, size2;
+
+	revealOblivInt(&size1,numFriendsParty1,0);
+	revealOblivInt(&size2,numFriendsParty2,0);
+
+
+	obliv char friendList1[MAXN][MAXL];
+	obliv char friendList2[MAXN][MAXL];
+
+	for (int i = 0; i < size1; i++)
+	{	
+		oblivStringCopy(friendList1[i],p->friendList[i].name,1);
+	}
+
+	for (int i = 0; i < size2; i++)
+	{
+		oblivStringCopy(friendList2[i],p->friendList[i].name,2);
+	}
+
+	int count=0;
+	for (int i = 0; i < size1; i++)
+	{
+		for (int j = 0; j < size2; j++)
+		{
+			char str1[MAXL];
+			char str2[MAXL];
+
+			bool isEq = oblivStrCmp(friendList1[i],friendList2[j]);
+			bool eq;
+			//revealOblivBool(&eq,isEq,0);
+			if(isEq)
+			{
+				revealOblivString(p->commonFriends[count].name,friendList2[j]);
+				count++;
+				break;
+			}
+			
+		}
+	}
+	p->res=count;
+
+	fprintf(stderr, "\n%u Gates have been used by party %d.\n",yaoGateCount(), p->id);	  
+}
+
+
