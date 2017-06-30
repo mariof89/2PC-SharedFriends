@@ -2,7 +2,7 @@
 
 ## Prerequisites
 * [Obliv-C](https://github.com/samee/obliv-c) compiler
-* [cycle](https://github.com/samee/cmd) command
+* [cycle](https://github.com/samee/cmd) command for creating circular pipe
 
 ## Compile and run the program
 ### Compile the code
@@ -31,6 +31,10 @@ Moreover, strings are case sensitive and hence 'alice' is different from 'Alice'
     # 2 - david
     
 ### Explanation
+Instantiation of two parties with their own list of friends:
+    $ cycle './a.out  1 alice bob carl john david jack | ./a.out 2 bob david alex luke ' 
+
+
 The number of gates used by the protocol:
 
     # 11323 Gates have been used.
